@@ -1,9 +1,10 @@
 <h1>Eat-Da-Burger!</h1>
 
+
 <main>
   <div class="container">
     <div class="row">
-      <div class="col s6">
+      <div class="col s6"><h4>Select Burger to Devour!</h4>
         {{#each burgers}}
           {{#unless this.devoured}}
             <div data-id={{this.id}}>
@@ -13,7 +14,7 @@
         {{/each}}
       </div>
 
-      <div class="col s6">
+      <div class="col s6"><h4>You Devoured These Burgers!</h4>
         {{#each burgers}}
           {{#if this.devoured}}
             <div class='burgerEaten' data-id={{id}}>
